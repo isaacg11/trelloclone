@@ -1,0 +1,10 @@
+{
+  "appId": "trelloclone",
+  "apiKey": "c3c77f1697ba8b0f1ee297a6d54db8898af1b1321695d2282157aa54a8054e24",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
