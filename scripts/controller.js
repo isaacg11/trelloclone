@@ -7,8 +7,16 @@ var app = angular.module('stamplay', ['ngStamplay'])
 //CONTROLLER
 app.controller('appController', ["$scope", "$stamplay", "appFactory", function($scope, $stamplay, appFactory){
 
-	$scope.test = "hello";
+	$scope.signUp = function(email, password){
+		
+		var registrationData = {
+			email: email,
+			password: password
+			};
 
+		var newUser = new Stamplay.User().Model;
+		newUser.signup(registrationData);
+	};
 }]);
 
 
