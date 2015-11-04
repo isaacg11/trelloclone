@@ -16,18 +16,21 @@
 		</p>
 		<div id = "loginBox" class = "container">
 			<p id="emailHeader">Email</p>
-			<input 
+			<input
+				ng-model="email" 
 				id="email"
 				type="email" 
 				class="form-control" 
 				placeholder="e.g., johndoe@gmail.com"/>
 			<p id="emailHeader">Password</p>
-			<input 
+			<input
+				ng-model="password"  
 				id="password"
 				type="password" 
 				class="form-control" 
 				placeholder="e.g., ******"/>
-			<input 
+			<input
+				ng-click="login(email, password)" 
 				id="login" 
 				style="margin: 1em 0 0 0;" 
 				tabindex="3" 

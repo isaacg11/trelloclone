@@ -15,8 +15,19 @@ app.controller('appController', ["$scope", "$stamplay", "appFactory", function($
 			};
 
 		var newUser = new Stamplay.User().Model;
-		newUser.signup(registrationData);
+		newUser.signup(registrationData).then(function(){
+			window.location = "home.html";
+		});
 	};
+
+	$scope.login = function(email,password){
+
+		var user = new Stamplay.User().Model;
+		user.login(email, password).then(function(){
+  			window.location = "home.html";
+		});
+	};
+
 }]);
 
 
