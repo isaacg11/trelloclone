@@ -6,7 +6,8 @@
     position: relative;
     top:-10px;
     left: calc(40%);
-    font-size: 20px;
+    font-size: 10px;
+    color: rgba(255,255,255,.5);
 }
 #navbarBoardsBtn{
     position: relative;
