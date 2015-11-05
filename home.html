@@ -13,15 +13,17 @@
 	<div ng-controller = "appController">
 		<nav id="navbar">
     		<div class="nav-wrapper">
-     		<a id="navbarHeader" class="brand-logo center">StampTrello</a>
-      		<ul id="leftNavbar" class="left hide-on-med-and-down">
+     		<a id="navbarHeader" class="brand-logo center hide-on-med-and-down">StampTrello</a>
+      		<ul id="leftNavbar" class="left">
         		<li id = "navbarBoardsBtn">
         			<a id = "boardsText"><b>Boards</b></a>
         		</li>
         		<li><a id = "navbarSearch">Search</a></li>
       		</ul>
-      		<ul id="nav-mobile" class="right hide-on-med-and-down">
-        		<li><a id = "navbarProfile">Name</a></li>
+      		<ul id="nav-mobile" class="right">
+        		<li id = "navbarProfile">
+              <a id = "profileText"><b>{{email}}</b></a>
+            </li>
       		</ul>
     		</div>
   		</nav>
